@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <div class="quiz-container unvisible">
+      <div class="time-progress">
+        <div id="time" style="position: relative">
+          <span style="position: fixed"></span>
+        </div>
+      </div>
+      <div class="score-container">
+        <h2 id="score" class="score">
+          score: <span style="text-align: center; margin-top: 2px">0</span>
+        </h2>
+      </div>
+      <h2 id="question" class="question"></h2>
+      <div id="answer-buttons">
+        <!-- <button class="btn">Option 1</button>
+        <button class="btn">Option 2</button>
+        <button class="btn">Option 3</button>
+        <button class="btn">Option 4</button> -->
+      </div>
+      <button id="next-btn">Next</button>
+    </div>
+    <div class="main" id="main">
+      <h2 class="title">Quiz App</h2>
+      <h2 class="total-score" id="total-score">Total Score: <span></span></h2>
+      <!-- line -->
+      <div class="line-back"><div class="line"></div></div>
+      <div class="history"><p>History</p></div>
+      <div class="history-quiz-container">
+        <!-- <div class="quiz">
+          <div class="quiz-score" id="quiz-score">44 <span>🏆</span></div>
+          <div class="quiz-date">2022/2/3 <span>📅</span></div>
+        </div> -->
+      </div>
+      <div class="line-back" style="margin-top: 20px">
+        <div class="line"></div>
+      </div>
+
+      <button class="start-btn" id="start-btn">Start</button>
+      <button class="restart-btn" id="restart-btn">Restart</button>
+    </div>
+    <div class="spinner-container unvisible">
+      <div class="spinner"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
