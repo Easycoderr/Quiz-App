@@ -158,10 +158,7 @@ function cheackedAnswear() {
     disableElements();
     setTimeout(() => nextQuestion(), 1000);
   } else {
-    disableElements();
-    // setTimeout(() => {
-    //   nextQuestion();
-    // }, 1000);
+    nextButtonEl.disabled = false;
   }
 }
 function nextButton() {
