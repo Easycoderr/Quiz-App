@@ -159,6 +159,14 @@ function cheackedAnswear() {
     setTimeout(() => nextQuestion(), 1000);
   } else {
     nextButtonEl.disabled = false;
+    if (quesTimer <= 0) {
+      buttonsEl.forEach((e) => {
+        if (e.textContent === questions[nextQuestionCount].correctAnswer) {
+          e.classList.add("correct");
+        }
+      });
+      setTimeout(() => nextQuestion(), 1500);
+    }
   }
 }
 function nextButton() {
