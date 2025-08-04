@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interactive Quiz</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,11 +16,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="assets/scripts/app.js" defer></script>
   </head>
   <body>
     <div class="quiz-container unvisible">
       <div class="time-progress">
-        <div id="time" >
+        <div id="time">
           <span></span>
         </div>
       </div>
@@ -30,12 +31,7 @@
         </h2>
       </div>
       <h2 id="question" class="question"></h2>
-      <div id="answer-buttons">
-        <!-- <button class="btn">Option 1</button>
-        <button class="btn">Option 2</button>
-        <button class="btn">Option 3</button>
-        <button class="btn">Option 4</button> -->
-      </div>
+      <div id="answer-buttons"></div>
       <button id="next-btn">Next</button>
     </div>
     <div class="main" id="main">
@@ -44,12 +40,7 @@
       <!-- line -->
       <div class="line-back"><div class="line"></div></div>
       <div class="history"><p>History</p></div>
-      <div class="history-quiz-container">
-        <!-- <div class="quiz">
-          <div class="quiz-score" id="quiz-score">44 <span>🏆</span></div>
-          <div class="quiz-date">2022/2/3 <span>📅</span></div>
-        </div> -->
-      </div>
+      <div class="history-quiz-container"></div>
       <div class="line-back" style="margin-top: 20px">
         <div class="line"></div>
       </div>
